@@ -60,12 +60,6 @@ import com.puppycrawl.tools.checkstyle.api.TokenTypes;
  *          }
  *      }
  *  }
- *
- *  class Test2{
- *      public void finalize(Object object) {
- *          System.out.println("using a function by name finalize but does not override");
- *      }
- *  }
  * </pre>
  *
  * @since 5.0

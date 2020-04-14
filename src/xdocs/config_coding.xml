@@ -4390,12 +4390,6 @@ public class Test {
         }
     }
 }
-
-class Test2{
-    public void finalize(Object object) {
-        System.out.println("using a function by name finalize but does not override");
-    }
-}
               </pre>
           </div>
       </subsection>
