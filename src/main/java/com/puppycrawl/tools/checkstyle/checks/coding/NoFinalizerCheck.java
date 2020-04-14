@@ -47,20 +47,9 @@ import com.puppycrawl.tools.checkstyle.api.TokenTypes;
  * </pre>
  * <p>Example:</p>
  * <pre>
- *  public class Test {
- *
- *      public static void main(String[] args){
- *          //violation
- *          FinalizerClass finalizerObject = new FinalizerClass();
- *
- *          //OK
- *          NoFinalizerClass noFinalizerObject = new NoFinalizerClass();
- *      }
- *  }
- *
- *  class FinalizerClass{
+ *  class Test2{
  *      public void finalize(Object object) {
- *          System.out.println("overloading finalize()");
+ *          System.out.println("using a function by name finalize but does not override");
  *      }
  *  }
  *
