@@ -47,14 +47,24 @@ import com.puppycrawl.tools.checkstyle.api.TokenTypes;
  * </pre>
  * <p>Example:</p>
  * <pre>
+ *  public class Test {
+ *
+ *      // Violation
+ *      protected void finalize() throws Throwable {
+ *          try {
+ *          System.out.println("overriding finalize()");
+ *          } catch (Throwable t) {
+ *              throw t;
+ *          } finally {
+ *              super.finalize();
+ *          }
+ *      }
+ *  }
+ *
  *  class Test2{
  *      public void finalize(Object object) {
  *          System.out.println("using a function by name finalize but does not override");
  *      }
- *  }
- *
- *  class NoFinalizerClass{
- *
  *  }
  * </pre>
  *
